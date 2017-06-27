@@ -1,11 +1,11 @@
-# ethereumjs-icap
+# expansejs-icap
 
-[![NPM Package](https://img.shields.io/npm/v/ethereumjs-icap.svg?style=flat-square)](https://www.npmjs.org/package/ethereumjs-icap)
-[![Build Status](https://img.shields.io/travis/ethereumjs/ethereumjs-icap.svg?branch=master&style=flat-square)](https://travis-ci.org/ethereumjs/ethereumjs-icap)
-[![Coverage Status](https://img.shields.io/coveralls/ethereumjs/ethereumjs-icap.svg?style=flat-square)](https://coveralls.io/r/ethereumjs/ethereumjs-icap)
-[![Gitter](https://img.shields.io/gitter/room/ethereum/ethereumjs-lib.svg?style=flat-square)](https://gitter.im/ethereum/ethereumjs-lib) or #ethereumjs on freenode
+[![NPM Package](https://img.shields.io/npm/v/expansejs-icap.svg?style=flat-square)](https://www.npmjs.org/package/expansejs-icap)
+[![Build Status](https://img.shields.io/travis/expansejs/expansejs-icap.svg?branch=master&style=flat-square)](https://travis-ci.org/expansejs/expansejs-icap)
+[![Coverage Status](https://img.shields.io/coveralls/expansejs/expansejs-icap.svg?style=flat-square)](https://coveralls.io/r/expansejs/expansejs-icap)
 
-Utilities for handling [ICAP](https://github.com/ethereum/wiki/wiki/ICAP:-Inter-exchange-Client-Address-Protocol) addresses.
+
+Utilities for handling [ICAP](https://github.com/expanse-org/wiki/wiki/ICAP:-Inter-exchange-Client-Address-Protocol) addresses.
 
 It works in Node.js as well as in the browser via `browserify`. When minified for a browser, it should be less than 4K in size.
 
@@ -63,7 +63,7 @@ That upper limit is `0x03ffffffffffffffffffffffffffffffffffffff` or `XE91GTJRJEU
 The following simple bruteforce code can be used to generate such addresses:
 
 ```js
-const ethUtil = require('ethereumjs-util')
+const ethUtil = require('expansejs-util')
 function generateDirectAddress () {
   while(true) {
     var privateKey = crypto.randomBytes(32) // or your favourite other random method
@@ -74,4 +74,4 @@ function generateDirectAddress () {
 }
 ```
 
-Alternatively [`ethereumjs-wallet`](http://npmjs.com/packages/ethereumjs-wallet) can be used to generate compatible addresses.
+Alternatively [`expansejs-wallet`](http://npmjs.com/packages/expansejs-wallet) can be used to generate compatible addresses.
