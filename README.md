@@ -74,4 +74,4 @@ function generateDirectAddress () {
 }
 ```
 
-Alternatively [`expansejs-wallet`](http://npmjs.com/packages/expansejs-wallet) can be used to generate compatible addresses.
+Alternatively [`expansejs-wallet`](http://npmjs.com/packages/expansejs-wallet) can be used to generate compatible addresses. 
